@@ -1,0 +1,6 @@
+.product-list {
+  display: grid;
+  gap: 20px;
+  color: blue;
+  font-size: 2rem;
+}

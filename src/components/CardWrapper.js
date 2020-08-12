@@ -1,10 +1,10 @@
 import React from "react"
-import DogCollar from "../images/dog-collars.jpg"
-import CatCollar from "../images/cat-collars.jpg"
-import Leashes from "../images/leashes.jpg"
-import Bandanas from "../images/bandana.jpg"
-import Flowers from "../images/flowers.jpg"
-import Bows from "../images/bowties.jpg"
+import DogCollar from "../olderimages/dog-collars.jpg"
+import CatCollar from "../olderimages/cat-collars.jpg"
+import Leashes from "../olderimages/leashes.jpg"
+import Bandanas from "../olderimages/bandana.jpg"
+import Flowers from "../olderimages/flowers.jpg"
+import Bows from "../olderimages/bowties.jpg"
 import "../css/style.css"
 
 export default function CardWrapper() {

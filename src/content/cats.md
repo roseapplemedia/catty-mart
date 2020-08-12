@@ -4,6 +4,7 @@ price: 12
 category: cat-collars
 size: small
 templateKey: product-page-layout
+image: catty/cat-collars.jpg
 ---
 
 ## Cat Collars

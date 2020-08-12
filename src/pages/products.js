@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Image } from "cloudinary-react"
 
 export default function ProductsPage({ data }) {
   const products = data.allMarkdownRemark.edges
@@ -9,7 +10,15 @@ export default function ProductsPage({ data }) {
         return (
           <Link key={node.fields.slug} to={node.fields.slug}>
             <div>
-              <p>...IMAGE</p>
+              <Image
+                cloudName="roseapplemedia"
+                publicId={node.frontmatter.image}
+                width="300"
+                crop="scale"
+                fetchFormat="auto"
+                quality="auto"
+                secure="true"
+              ></Image>
             </div>
             <div>${node.frontmatter.price}</div>
             <div>{node.frontmatter.category}</div>
@@ -34,6 +43,7 @@ export const pageQuery = graphql`
             category
             price
             size
+            image
           }
         }
       }

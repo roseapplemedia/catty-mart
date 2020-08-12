@@ -1,8 +1,4 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 
 module.exports = {
   siteMetadata: {
@@ -28,5 +24,31 @@ module.exports = {
         path: `${__dirname}/src/content/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/olderimages/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-snipcartv3`,
+      options: {
+        apiKey:
+          "YWFiYjZiYWMtZGE0Zi00ZDlkLTlkNjAtNzg1NWJhODQxMTAzNjM3MDM4OTcyNDY2NTY5MzA1",
+        // js: `https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js`,
+        // styles: `https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css`,
+        autopop: true,
+      },
+    },
+    // {
+    //   resolve: `gatsby-transformer-cloudinary`,
+    //   options: {
+    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+    //     apiKey: process.env.CLOUDINARY_API_KEY,
+    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
+    //     uploadFolder: "catty",
+    //   },
+    // },
   ],
 }

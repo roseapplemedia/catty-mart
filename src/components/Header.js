@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import Image from "../images/alittlecattywampus.png"
+import Image from "../olderimages/alittlecattywampus.png"
 
 export default function Header({ siteTitle }) {
   return (
@@ -25,6 +25,13 @@ export default function Header({ siteTitle }) {
           <Link className="nav-links" to="../contact/">
             Contact
           </Link>
+          <Link className="nav-links" to="../products/">
+            Products
+          </Link>
+          <button className="snipcart-checkout">
+            <span className="snipcart-items-count"></span>
+            <span className="snipcart-total-price"></span>
+          </button>
         </div>
       </nav>
     </header>

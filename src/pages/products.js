@@ -9,6 +9,7 @@ export default function ProductsPage({ data }) {
       {products.map(({ node }) => {
         return (
           <Link key={node.fields.slug} to={node.fields.slug}>
+            <div>{node.frontmatter.category} </div>
             <div>
               <Image
                 cloudName="roseapplemedia"
@@ -22,7 +23,6 @@ export default function ProductsPage({ data }) {
             </div>
             <div>${node.frontmatter.price}</div>
             <div>{node.frontmatter.category}</div>
-
             <div>{node.frontmatter.size}</div>
           </Link>
         )

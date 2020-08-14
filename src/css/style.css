@@ -129,3 +129,8 @@ body {
   text-transform: uppercase;
   align-self: center;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}

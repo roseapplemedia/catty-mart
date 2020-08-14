@@ -1,6 +1,14 @@
 .product-list {
-  display: grid;
+  display: flex;
   gap: 20px;
   color: blue;
   font-size: 2rem;
+}
+
+.products-layout {
+  display: flex;
+}
+
+.products-layout h1 {
+  font-size: 3em;
 }

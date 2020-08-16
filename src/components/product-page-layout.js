@@ -25,12 +25,12 @@ export default function ProductPageLayout({ data }) {
         <button
           className="snipcart-add-item"
           data-item-description="High-quality"
-          data-item-id={data.markdownRemark.frontmatter.id}
+          data-item-id={data.markdownRemark.frontmatter.size}
           data-item-image={data.markdownRemark.frontmatter.image}
           data-item-price={data.markdownRemark.frontmatter.price}
           data-item-url={
-            "https://agitated-goldberg-1f087a.netlify.app/" +
-            data.markdownRemark.frontmatter.slug
+            `https://agitated-goldberg-1f087a.netlify.app/` +
+            data.markdownRemark.fields.slug
           }
           data-item-name={data.markdownRemark.frontmatter.title}
 

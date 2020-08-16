@@ -1,6 +1,6 @@
 ---
 title: dogs galore
-price: 13
+price: 13.00
 category: dog-collars
 size: small
 templateKey: product-page-layout

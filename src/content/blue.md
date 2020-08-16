@@ -1,6 +1,6 @@
 ---
 title: leashes
-price: 0
+price: 18.00
 category: leashes
 size: Small
 templateKey: product-page-layout

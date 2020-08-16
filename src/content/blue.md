@@ -1,5 +1,5 @@
 ---
-name: Dog Leashe
+title: Dog Leashe
 price: 18.00
 category: leashes
 description: Nice leash

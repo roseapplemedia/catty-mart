@@ -32,7 +32,8 @@ export default function ProductPageLayout({ data }) {
             "https://agitated-goldberg-1f087a.netlify.app/" +
             data.markdownRemark.frontmatter.slug
           }
-          data-item-name={data.markdownRemark.frontmatter.category}
+          data-item-name={data.markdownRemark.frontmatter.title}
+
           // data-item-custom1-name={
           //   data.markdownRemark.frontmatter.customField.name
           // }

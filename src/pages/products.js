@@ -5,25 +5,28 @@ import { Image } from "cloudinary-react"
 export default function ProductsPage({ data }) {
   const products = data.allMarkdownRemark.edges
   return (
-    <div className="product-list">
+    <div className="main-grid">
       {products.map(({ node }) => {
         return (
           <Link key={node.fields.slug} to={node.fields.slug}>
-            <div>{node.frontmatter.category} </div>
-            <div>
-              <Image
-                cloudName="roseapplemedia"
-                publicId={node.frontmatter.image}
-                width="300"
-                crop="scale"
-                fetchFormat="auto"
-                quality="auto"
-                secure="true"
-              ></Image>
+            <div class="main-item">
+              <h2 class=" category-tag">{node.frontmatter.title}</h2>
+              <div className="card__image">
+                <Image
+                  cloudName="roseapplemedia"
+                  publicId={node.frontmatter.image}
+                  width="300"
+                  crop="scale"
+                  fetchFormat="auto"
+                  quality="auto"
+                  secure="true"
+                ></Image>
+              </div>
+              <div className="content-description">
+                {node.frontmatter.description}
+              </div>
+              <button class="card-button">View this item</button>
             </div>
-            <div>${node.frontmatter.price}</div>
-            <div>{node.frontmatter.category}</div>
-            <div>{node.frontmatter.size}</div>
           </Link>
         )
       })}
@@ -32,7 +35,7 @@ export default function ProductsPage({ data }) {
 }
 
 export const pageQuery = graphql`
-  query MyQuery {
+  query {
     allMarkdownRemark {
       edges {
         node {
@@ -40,9 +43,11 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            title
             category
             price
             size
+            description
             image
           }
         }

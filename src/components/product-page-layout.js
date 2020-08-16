@@ -17,17 +17,23 @@ export default function ProductPageLayout({ data }) {
         ></Image>
       </div>
       <div>
-        <h1>${data.markdownRemark.frontmatter.price}</h1>
+        <p>{data.markdownRemark.frontmatter.title}</p>
         <p>{data.markdownRemark.frontmatter.size}</p>
         <p>{data.markdownRemark.frontmatter.category}</p>
+        <p>{data.markdownRemark.frontmatter.customField.name}</p>
+        <p>{data.markdownRemark.frontmatter.customField.values}</p>
         <button
           className="snipcart-add-item"
           data-item-id={data.markdownRemark.frontmatter.id}
           data-item-price={data.markdownRemark.frontmatter.price}
           data-item-url={data.markdownRemark.frontmatter.slug}
           data-item-name={data.markdownRemark.frontmatter.category}
-          data-item-custom1-name="Sizes"
-          data-item-custom1-options="Small[+18.00]|Medium[+23.00]|Large[+25.00]"
+          // data-item-custom1-name={
+          //   data.markdownRemark.frontmatter.customField.name
+          // }
+          // data-item-custom1-options={
+          //   data.markdownRemark.frontmatter.customField.values
+          // }
         >
           ADD TO CART
         </button>
@@ -40,14 +46,20 @@ export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        customField {
+          name
+          values
+        }
         category
         price
         size
         image
+        title
       }
       fields {
         slug
       }
+      id
     }
   }
 `

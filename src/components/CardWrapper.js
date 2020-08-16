@@ -9,11 +9,11 @@ import "../css/style.css"
 
 export default function CardWrapper() {
   return (
-    <div class="main-grid">
-      <div class="main-item dog-collars">
-        <h2 class="dog-collars category-tag">dog collars</h2>
-        <img class="card__image" src={DogCollar} alt="dog-collars" />
-        <ul class="card-desc">
+    <div className="main-grid">
+      <div className="main-item dog-collars">
+        <h2 className="dog-collars category-tag">dog collars</h2>
+        <img className="card__image" src={DogCollar} alt="dog-collars" />
+        <ul className="card-desc">
           <li>Polypropylene Webbing (no stretching)</li>
           <li>Washable Cotton Fabric Heavy</li>
           <li>Duty Outdoor Thread</li>
@@ -21,8 +21,9 @@ export default function CardWrapper() {
           <li>Collars adjust tor a perfect fit for your pet</li>
           <li>XSmall, Small, Medium, Large, XLarge</li>
         </ul>
-        <button class="card-button">browse dog-collars</button>
+        <button className="card-button">browse dog-collars</button>
       </div>
+
       <div class="main-item cat-collars">
         <h2 class="cat-collars category-tag">cat collars</h2>
         <img class="card__image" src={CatCollar} alt="dog-collars" />

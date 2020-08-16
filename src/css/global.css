@@ -1,8 +1,8 @@
 .product-list {
+  background: #fff;
   display: flex;
-  gap: 20px;
-  color: blue;
-  font-size: 2rem;
+  gap: 5ch;
+  overflow-x: auto;
 }
 
 .products-layout {
@@ -11,4 +11,37 @@
 
 .products-layout h1 {
   font-size: 3em;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background: #161629;
+  min-width: 450px;
+  /* margin: 55px 0; */
+  border-radius: 20px;
+  color: white;
+  object-fit: cover;
+}
+
+/* .image {
+  width: 100%;
+} */
+
+.content-p {
+  text-align: center;
+}
+.content-span {
+  margin: 25px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.content-button {
+  width: 60%;
+  background-color: aqua;
+}
+
+.content-font-size {
+  font-size: 2rem;
 }

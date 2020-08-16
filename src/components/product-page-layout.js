@@ -24,7 +24,10 @@ export default function ProductPageLayout({ data }) {
         <p>{data.markdownRemark.frontmatter.customField.values}</p>
         <button
           className="snipcart-add-item"
+          data-item-description="High-quality"
           data-item-id={data.markdownRemark.frontmatter.id}
+          data-item-name={data.markdownRemark.frontmatter.customField.name}
+          data-item-image={data.markdownRemark.frontmatter.image}
           data-item-price={data.markdownRemark.frontmatter.price}
           data-item-url={
             "https://agitated-goldberg-1f087a.netlify.app/" +

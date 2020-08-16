@@ -26,7 +26,10 @@ export default function ProductPageLayout({ data }) {
           className="snipcart-add-item"
           data-item-id={data.markdownRemark.frontmatter.id}
           data-item-price={data.markdownRemark.frontmatter.price}
-          data-item-url={data.markdownRemark.frontmatter.slug}
+          data-item-url={
+            "https://agitated-goldberg-1f087a.netlify.app/" +
+            data.markdownRemark.frontmatter.slug
+          }
           data-item-name={data.markdownRemark.frontmatter.category}
           // data-item-custom1-name={
           //   data.markdownRemark.frontmatter.customField.name

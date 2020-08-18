@@ -1,7 +1,7 @@
 ---
-title: Dog Leash
+title: Leash 2
 price: 18.00
-tags: ["leashes"]
+tags: ["leashes", "dog-collars"]
 description: Nice leash
 size: Small
 templateKey: product-page-layout

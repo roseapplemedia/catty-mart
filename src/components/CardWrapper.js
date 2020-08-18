@@ -6,6 +6,7 @@ import Bandanas from "../olderimages/bandana.jpg"
 import Flowers from "../olderimages/flowers.jpg"
 import Bows from "../olderimages/bowties.jpg"
 import "../css/style.css"
+import { Link } from "gatsby"
 
 export default function CardWrapper() {
   return (
@@ -21,7 +22,9 @@ export default function CardWrapper() {
           <li>Collars adjust tor a perfect fit for your pet</li>
           <li>XSmall, Small, Medium, Large, XLarge</li>
         </ul>
-        <button className="card-button">browse dog-collars</button>
+        <Link to="../dog-collars">
+          <button className="card-button">browse dog-collars</button>
+        </Link>
       </div>
 
       <div class="main-item cat-collars">
@@ -46,8 +49,11 @@ export default function CardWrapper() {
           <li>Made ot order by the foot to fit your needs</li>
           <li>By The Foot</li>
         </ul>
-        <button class="card-button">browse leashes</button>
+        <Link to="../leashes">
+          <button class="card-button">browse leashes</button>
+        </Link>
       </div>
+
       <div class="main-item flowers">
         <h2 class="flowers category-tag">flowers</h2>
         <img class="card__image" src={Flowers} alt="dog-collars" />

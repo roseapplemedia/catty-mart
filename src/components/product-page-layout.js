@@ -19,7 +19,7 @@ export default function ProductPageLayout({ data }) {
       <div>
         <p>{data.markdownRemark.frontmatter.title}</p>
         <p>{data.markdownRemark.frontmatter.size}</p>
-        <p>{data.markdownRemark.frontmatter.category}</p>
+        <p>{data.markdownRemark.frontmatter.tags}</p>
         <p>{data.markdownRemark.frontmatter.customField.name}</p>
         <p>{data.markdownRemark.frontmatter.customField.values}</p>
         <button
@@ -56,7 +56,7 @@ export const pageQuery = graphql`
           name
           values
         }
-        category
+        tags
         price
         size
         image

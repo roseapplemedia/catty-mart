@@ -36,7 +36,9 @@ export default function ProductsPage({ data }) {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: { frontmatter: { tags: { eq: "dog-collars" } } }
+    ) {
       edges {
         node {
           fields {

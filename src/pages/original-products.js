@@ -10,14 +10,14 @@ export default function ProductsPage({ data }) {
         return (
           <div className="card-content">
             <p className="content-p content-font-size">
-              {node.frontmatter.category}
+              {node.frontmatter.tags}
             </p>
             <Link
               className="content-p"
               key={node.fields.slug}
               to={node.fields.slug}
             >
-              <p className="content-p">{node.frontmatter.category} </p>
+              <p className="content-p">{node.frontmatter.tags} </p>
               <div className="image">
                 <Image
                   cloudName="roseapplemedia"
@@ -31,7 +31,7 @@ export default function ProductsPage({ data }) {
               </div>
 
               <span className="content-span">
-                <p className="content-font-size">{node.frontmatter.category}</p>
+                <p className="content-font-size">{node.frontmatter.tags}</p>
                 <p className="content-font-size">{node.frontmatter.size}</p>
               </span>
               <div className="content-span content-font-size">
@@ -57,7 +57,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            category
+            tags
             price
             size
             image

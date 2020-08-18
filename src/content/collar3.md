@@ -1,7 +1,7 @@
 ---
-title: Dog Leash
+title: Collar 3
 price: 18.00
-tags: ["leashes"]
+tags: ["dog-collars"]
 description: Nice leash
 size: Small
 templateKey: product-page-layout

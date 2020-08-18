@@ -36,7 +36,7 @@ export default function ProductsPage({ data }) {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { tags: { eq: "leashes" } } }) {
       edges {
         node {
           fields {

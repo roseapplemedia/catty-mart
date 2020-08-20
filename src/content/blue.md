@@ -8,5 +8,5 @@ templateKey: product-page-layout
 image: catty/leashes.jpg
 customField: 
     name: Size
-    values: Small[+18.00]|Medium[+23.00]|Large[+25.00]
+    values: [{name: 'Small', priceChange: 0},{name: 'medium', priceChange: 4.00},{name: 'large', priceChange: 8.00}]
 ---

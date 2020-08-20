@@ -55,13 +55,13 @@ body {
   text-decoration: none;
 } */
 
-.logo-image {
-  max-width: 450px;
-}
+/* .logo-image {
+  max-width: 350px;
+} */
 
-.basket {
+/* .basket {
   padding-right: 0.25rem;
-}
+} */
 
 .main-grid {
   display: grid;

@@ -58,6 +58,10 @@ body {
   max-width: 450px;
 }
 
+.basket {
+  padding-right: 0.25rem;
+}
+
 .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
@@ -129,6 +133,7 @@ body {
   border-radius: 10px;
   text-transform: uppercase;
   align-self: center;
+  margin: 0 1rem;
 }
 
 .main {

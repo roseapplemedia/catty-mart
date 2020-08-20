@@ -1,12 +1,12 @@
 ---
-title: Leash 2
-price: 18.00
-tags: ["leashes", "dog-collars"]
+title: Bows
+price: 5.00
+tags: ["bows", "dog-collars"]
 description: Nice leash
 size: Small
 templateKey: product-page-layout
-image: catty/leashes.jpg
+image: catty/bowties.jpg
 customField: 
-    name: Size
-    values: [{name: 'Small', priceChange: 0},{name: 'medium', priceChange: 4.00},{name: 'large', priceChange: 8.00}]
+    name: Select Size
+    values: [{name: 'Small', priceChange: 0},{name: 'Large', priceChange: 8.00}]
 ---

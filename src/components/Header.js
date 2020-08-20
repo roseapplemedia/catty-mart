@@ -25,12 +25,11 @@ export default function Header({ siteTitle }) {
           <Link className="nav-links" to="../contact/">
             Contact
           </Link>
-          <Link className="nav-links" to="../products/">
-            Products
-          </Link>
-          <button className="snipcart-checkout">
-            <span className="snipcart-items-count"></span>
-            <span className="snipcart-total-price"></span>
+
+          <button className="snipcart-checkout card-button">
+            <span className="basket">BASKET</span>
+            <span className="snipcart-items-count basket"></span>
+            <span className="snipcart-total-price basket"></span>
           </button>
         </div>
       </nav>

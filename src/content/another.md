@@ -1,12 +1,12 @@
 ---
-title: Dog Another
+title: Dog Collars
 price: 18.00
 tags: ["dog-collars"]
 description: Nice leash
 size: Small
 templateKey: product-page-layout
-image: catty/leashes.jpg
+image: catty/dog-collars.jpg
 customField: 
-    name: Size
+    name: Select Size
     values: [{name: 'Small', priceChange: 0},{name: 'medium', priceChange: 4.00},{name: 'large', priceChange: 8.00}]
 ---

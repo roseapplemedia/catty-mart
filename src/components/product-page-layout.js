@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { Image } from "cloudinary-react"
+import { Image } from "cloudinary-react"
 // import { render } from "react-dom"
 
 class Item extends React.Component {
@@ -35,31 +35,31 @@ class Item extends React.Component {
     const item = this.props.data.markdownRemark
 
     return (
-      <div className="products-layout">
-        {/* <div>
-        <Image
-          cloudName="roseapplemedia"
-          publicId={data.markdownRemark.frontmatter.image}
-          width="600"
-          crop="scale"
-          fetchFormat="auto"
-          quality="auto"
-          secure="true"
-        ></Image>
-      </div> */}
-        <div>
-          <p>
+      <div className="main">
+        <div className="products-layout-image">
+          <Image
+            cloudName="roseapplemedia"
+            publicId={item.frontmatter.image}
+            width="500"
+            crop="scale"
+            fetchFormat="auto"
+            quality="auto"
+            secure="true"
+          ></Image>
+        </div>
+        <div className="products-layout-info">
+          <span>
             {this.updatePrice(
               item.frontmatter.price,
               item.frontmatter.customField.values
             )}
-          </p>
-          <p>{item.frontmatter.title}</p>
-          <p>{item.frontmatter.size}</p>
-          <p>{item.frontmatter.tags}</p>
-
-          <p>{item.frontmatter.customField.name}</p>
-
+          </span>
+          <span>{item.frontmatter.title}</span>
+          <span>{item.frontmatter.size}</span>
+          <span>{item.frontmatter.tags}</span>
+        </div>
+        <div className="products-layout card-button">
+          <span>{item.frontmatter.customField.name}</span>
           {/* <label for="size">Sizes</label> */}
           <select
             name="size"
@@ -73,7 +73,7 @@ class Item extends React.Component {
           </select>
 
           <button
-            className="snipcart-add-item"
+            className="snipcart-add-item card-button"
             data-item-description="High-quality"
             data-item-id={item.frontmatter.size}
             data-item-image={item.frontmatter.image}

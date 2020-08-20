@@ -41,6 +41,13 @@ module.exports = {
         autopop: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+
     // {
     //   resolve: `gatsby-transformer-cloudinary`,
     //   options: {

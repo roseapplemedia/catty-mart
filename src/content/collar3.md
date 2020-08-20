@@ -1,7 +1,7 @@
 ---
 title: Cat Collars
 price: 18.00
-tags: ["cat-collars"]
+tags: ["dog-collars"]
 description: Nice leash
 size: Small
 templateKey: product-page-layout

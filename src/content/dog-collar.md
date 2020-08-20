@@ -1,7 +1,7 @@
 ---
 title: Flowers
 price: 18.00
-tags: ["flowers"]
+tags: ["dog-collars"]
 description: Nice leash
 size: Small
 templateKey: product-page-layout

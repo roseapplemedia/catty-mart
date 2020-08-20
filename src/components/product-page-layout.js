@@ -48,18 +48,20 @@ class Item extends React.Component {
           ></Image>
         </div>
         <div className="products-layout-info">
-          <span>
+          <span className="product-title">{item.frontmatter.title}</span>
+          <span className="product-desc">{item.frontmatter.description}</span>
+
+          {/* <span>{item.frontmatter.tags}</span> */}
+        </div>
+        <div className="products-layout card-button">
+          <span>{item.frontmatter.customField.name}</span>
+          <span className="product-price">
+            $
             {this.updatePrice(
               item.frontmatter.price,
               item.frontmatter.customField.values
             )}
           </span>
-          <span>{item.frontmatter.title}</span>
-          <span>{item.frontmatter.size}</span>
-          <span>{item.frontmatter.tags}</span>
-        </div>
-        <div className="products-layout card-button">
-          <span>{item.frontmatter.customField.name}</span>
           {/* <label for="size">Sizes</label> */}
           <select
             name="size"
@@ -74,7 +76,7 @@ class Item extends React.Component {
 
           <button
             className="snipcart-add-item card-button"
-            data-item-description="High-quality"
+            data-item-description={item.frontmatter.description}
             data-item-id={item.frontmatter.size}
             data-item-image={item.frontmatter.image}
             data-item-price={item.frontmatter.price}
@@ -106,6 +108,7 @@ export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        description
         customField {
           name
           values {

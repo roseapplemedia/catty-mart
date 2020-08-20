@@ -37,22 +37,23 @@ body {
   background-color: yellowgreen;
 }
 
-.header {
+/* .nav-header {
   margin-bottom: 8rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   place-items: center;
-}
+} */
 
-.nav-links {
+/* .nav-links {
   display: flex;
+  gap: 1rem;
   align-items: center;
   margin-left: 3rem;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-}
+} */
 
 .logo-image {
   max-width: 450px;
@@ -67,7 +68,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-template-rows: repeat(2, auto-fill);
   min-height: 100vh;
-  place-items: center;
+  justify-items: center;
 }
 
 .card__image {

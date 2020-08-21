@@ -1,7 +1,57 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Image } from "cloudinary-react"
+import styled from "styled-components"
 // import { render } from "react-dom"
+
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+`
+
+const ProductImage = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  align-items: center;
+`
+const SelectButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* height: 15rem; */
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  background-color: turquoise;
+  font-weight: bold;
+  border: none;
+  width: 135px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  align-self: flex-start;
+  align-items: center;
+`
+const BuyButton = styled.button`
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  background-color: blue;
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 120px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  align-self: center;
+  margin: 0 1rem;
+`
+
+const ProductDesc = styled.span`
+  font-size: 1rem;
+  width: 20rem;
+`
 
 class Item extends React.Component {
   state = {
@@ -35,36 +85,33 @@ class Item extends React.Component {
     const item = this.props.data.markdownRemark
 
     return (
-      <div className="main">
-        <div className="products-layout-image">
+      <Container>
+        <ProductImage>
+          <div className="products-layout-info">
+            <h1 className="product-title">{item.frontmatter.title}</h1>
+          </div>
           <Image
             cloudName="roseapplemedia"
             publicId={item.frontmatter.image}
-            width="500"
+            width="350"
             crop="scale"
             fetchFormat="auto"
             quality="auto"
             secure="true"
           ></Image>
-        </div>
-        <div className="products-layout-info">
-          <span className="product-title">{item.frontmatter.title}</span>
-          <span className="product-desc">{item.frontmatter.description}</span>
-
-          {/* <span>{item.frontmatter.tags}</span> */}
-        </div>
-        <div className="products-layout card-button">
-          <span>{item.frontmatter.customField.name}</span>
-          <span className="product-price">
+          <ProductDesc>{item.frontmatter.description}</ProductDesc>
+        </ProductImage>
+        <SelectButton>
+          <h4>{item.frontmatter.customField.name}</h4>
+          <h2>
             $
             {this.updatePrice(
               item.frontmatter.price,
               item.frontmatter.customField.values
             )}
-          </span>
+          </h2>
           {/* <label for="size">Sizes</label> */}
           <select
-            name="size"
             id={item.frontmatter.customField.name}
             onChange={e => this.setSelected(e.target.value)}
             value={this.state.selected}
@@ -74,8 +121,8 @@ class Item extends React.Component {
             ))}
           </select>
 
-          <button
-            className="snipcart-add-item card-button"
+          <BuyButton
+            className="snipcart-add-item"
             data-item-description={item.frontmatter.description}
             data-item-id={item.frontmatter.size}
             data-item-image={item.frontmatter.image}
@@ -95,9 +142,9 @@ class Item extends React.Component {
             data-item-custom1-value={this.state.selected}
           >
             ADD TO BASKET
-          </button>
-        </div>
-      </div>
+          </BuyButton>
+        </SelectButton>
+      </Container>
     )
   }
 }

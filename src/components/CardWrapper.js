@@ -16,10 +16,10 @@ export default function CardWrapper() {
         <img className="card__image" src={DogCollar} alt="dog-collars" />
         <ul className="card-desc">
           <li>Polypropylene Webbing (no stretching)</li>
-          <li>Washable Cotton Fabric Heavy</li>
-          <li>Duty Outdoor Thread</li>
-          <li>Aluminum side release Buckles (Engravable)</li>
-          <li>Collars adjust tor a perfect fit for your pet</li>
+          <li>Washable Cotton Fabric</li>
+          <li>Heavy Duty Outdoor Thread</li>
+          <li>Engravable Aluminum side release Buckles</li>
+          <li>Collars adjust for a perfect fit</li>
           <li>XSmall, Small, Medium, Large, XLarge</li>
         </ul>
         <Link to="../dog-collars">
@@ -34,9 +34,9 @@ export default function CardWrapper() {
           <li>Polypropylene Webbing (no stretching)</li>
           <li>Washable Cotton Fabric</li>
           <li>Heavy Duty Outdoor Thread</li>
-          <li>Plastic Quick Release Buckle fro Safety</li>
-          <li>Adjustable Collar for a perfect fit for your pet</li>
-          <li>Collar is 8" and expands to 13"</li>
+          <li>Plastic Quick Release Buckle for Safety</li>
+          <li>Adjustable Collar for a perfect fit</li>
+          <li>Collar is 8" and expands to 11"</li>
         </ul>
         <button class="card-button">browse cat-collars</button>
       </div>
@@ -45,9 +45,9 @@ export default function CardWrapper() {
         <img class="card__image" src={Leashes} alt="dog-collars" />
         <ul class="card-desc">
           <li>Polypropylene Webbing (no stretching)</li>
-          <li>Washable Cotton Fabric Heavy</li>
-          <li>Made ot order by the foot to fit your needs</li>
-          <li>By The Foot</li>
+          <li>Washable Cotton Fabric</li>
+          <li>Heavy Duty Outdoor Thread</li>
+          <li>Made to order by the foot</li>
         </ul>
         <Link to="../leashes">
           <button class="card-button">browse leashes</button>

@@ -54,10 +54,14 @@ const ProductDesc = styled.span`
 `
 
 class Item extends React.Component {
-  state = {
-    selected: this.props.data.markdownRemark.frontmatter.customField.values[0]
-      .name,
+  constructor(props) {
+    super(props)
+    this.state = {
+      selected: this.props.data.markdownRemark.frontmatter.customField.values[0]
+        .name,
+    }
   }
+
   setSelected = value => {
     this.setState({ selected: value })
   }

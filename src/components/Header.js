@@ -13,13 +13,16 @@ const NavHeader = styled.div`
 `
 const NavLinks = styled.div`
   display: flex;
-  gap: 0.75rem;
   align-items: center;
-  /* margin-left: 3rem; */
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+
+  & a {
+    margin-right: 3rem;
+    font-size: 1.2rem;
+  }
 `
 const LogoImage = styled.img`
   max-width: 350px;
@@ -32,11 +35,11 @@ const BasketButton = styled.button`
   background-color: turquoise;
   font-weight: bold;
   border: none;
-  width: 125px;
+  width: 25ch;
   border-radius: 10px;
   text-transform: uppercase;
   align-self: center;
-  margin: 0 1rem;
+  margin: 3ch 12ch;
 `
 
 export default function Header({ siteTitle }) {

@@ -1,7 +1,7 @@
 ---
 title: Blue Stripe
 price: 16.00
-tags: ["dog-collars"]
+tags: ["cat-collars"]
 description: 
 size: All
 templateKey: product-page-layout

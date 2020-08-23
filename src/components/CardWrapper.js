@@ -38,7 +38,9 @@ export default function CardWrapper() {
           <li>Adjustable Collar for a perfect fit</li>
           <li>Collar is 8" and expands to 11"</li>
         </ul>
-        <button class="card-button">browse cat-collars</button>
+        <Link to="../cat-collars">
+          <button className="card-button">browse cat-collars</button>
+        </Link>
       </div>
       <div class="main-item leashes">
         <h2 class="leashes category-tag">leashes</h2>
@@ -63,7 +65,9 @@ export default function CardWrapper() {
           <li>Attaches with an elastic cord for a secure hold</li>
           <li>Small, Large</li>
         </ul>
-        <button class="card-button">browse flowers</button>
+        <Link to="../flowers">
+          <button class="card-button">browse flowers</button>
+        </Link>
       </div>
       <div class="main-item bandanas">
         <h2 class="bandanas category-tag">bandanas</h2>
@@ -74,7 +78,9 @@ export default function CardWrapper() {
           <li>Over-the-collar style to prevent loss</li>
           <li>Small, Medium, Large</li>
         </ul>
-        <button class="card-button">browse bandanas</button>
+        <Link to="../bandanas">
+          <button class="card-button">browse bandanas</button>
+        </Link>
       </div>
       <div class="main-item bows">
         <h2 class="bows category-tag">bows</h2>
@@ -85,7 +91,9 @@ export default function CardWrapper() {
           <li>Attaches with an elastic cord for a secure hold</li>
           <li>Small, Large</li>
         </ul>
-        <button class="card-button">browse bows</button>
+        <Link to="../bows">
+          <button class="card-button">browse bows</button>
+        </Link>
       </div>
     </div>
   )

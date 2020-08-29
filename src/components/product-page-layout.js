@@ -129,7 +129,6 @@ class Item extends React.Component {
             className="snipcart-add-item"
             data-item-description={item.frontmatter.description}
             data-item-id={item.frontmatter.size}
-            data-item-image={item.frontmatter.image}
             data-item-price={item.frontmatter.price}
             data-item-url={
               "https://agitated-goldberg-1f087a.netlify.app" + item.fields.slug

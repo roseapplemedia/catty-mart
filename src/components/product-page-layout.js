@@ -46,6 +46,7 @@ const BuyButton = styled.button`
   text-transform: uppercase;
   align-self: center;
   margin: 0 1rem;
+  cursor: pointer;
 `
 
 const ProductDesc = styled.span`

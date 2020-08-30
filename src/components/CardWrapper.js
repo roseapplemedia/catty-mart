@@ -61,7 +61,7 @@ export default function CardWrapper() {
         <img class="card__image" src={Flowers} alt="dog-collars" />
         <ul class="card-desc">
           <li>Custom Made</li>
-          <li>Washable Cotton Fabric Heavy</li>
+          <li>Washable Cotton Fabric</li>
           <li>Attaches with an elastic cord for a secure hold</li>
           <li>Small, Large</li>
         </ul>
@@ -73,7 +73,7 @@ export default function CardWrapper() {
         <h2 class="bandanas category-tag">bandanas</h2>
         <img class="card__image" src={Bandanas} alt="dog-collars" />
         <ul class="card-desc">
-          <li>Washable Cotton Fabric Heavy</li>
+          <li>Washable Cotton Fabric</li>
           <li>Heavy Duty Outdoor Thread</li>
           <li>Over-the-collar style to prevent loss</li>
           <li>Small, Medium, Large</li>
@@ -86,7 +86,7 @@ export default function CardWrapper() {
         <h2 class="bows category-tag">bows</h2>
         <img class="card__image" src={Bows} alt="dog-collars" />
         <ul class="card-desc">
-          <li>Washable Cotton Fabric Heavy</li>
+          <li>Washable Cotton Fabric</li>
           <li>Heavy Duty Outdoor Thread</li>
           <li>Attaches with an elastic cord for a secure hold</li>
           <li>Small, Large</li>

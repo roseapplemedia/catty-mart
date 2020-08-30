@@ -32,7 +32,7 @@ const SelectButton = styled.div`
   margin: 0 1rem;
   align-self: center;
   align-items: center;
-  & h2 {
+  & h4 {
     margin-bottom: 0.5rem;
   }
 

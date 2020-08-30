@@ -18,7 +18,7 @@ export default function Layout({ children }) {
   `)
 
   return (
-    <div>
+    <div className="site-color">
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer metaData={data.site.siteMetadata} />

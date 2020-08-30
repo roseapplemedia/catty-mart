@@ -20,8 +20,7 @@ const ProductImage = styled.div`
 const SelectButton = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  /* height: 15rem; */
+  gap: 1.2rem;
   padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
   background-color: turquoise;
@@ -31,8 +30,12 @@ const SelectButton = styled.div`
   border-radius: 10px;
   text-transform: uppercase;
   margin: 0 1rem;
-  align-self: flex-start;
+  align-self: center;
   align-items: center;
+
+  & select {
+    width: 7rem;
+  }
 `
 const BuyButton = styled.button`
   padding: 0.5rem 0.75rem;
@@ -107,7 +110,6 @@ class Item extends React.Component {
           <ProductDesc>{item.frontmatter.description}</ProductDesc>
         </ProductImage>
         <SelectButton>
-          <h4>{item.frontmatter.customField.name}</h4>
           <h2>
             $
             {this.updatePrice(
@@ -115,6 +117,7 @@ class Item extends React.Component {
               item.frontmatter.customField.values
             )}
           </h2>
+          <h4>{item.frontmatter.customField.name}</h4>
           {/* <label for="size">Sizes</label> */}
           <select
             id={item.frontmatter.customField.name}

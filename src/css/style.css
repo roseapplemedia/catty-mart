@@ -12,29 +12,30 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 10px;
   margin: 2rem;
+  background-color: #e2f4ee;
 }
 
 .dog-collars {
-  background-color: #ddb771;
+  background-color: #8dd4bd;
 }
 .cat-collars {
-  background-color: #f46036;
+  background-color: #8dbbac;
 }
 
 .leashes {
-  background-color: #655356;
+  background-color: #92aaa2;
 }
 
 .bandanas {
-  background-color: #235789;
+  background-color: #a8bbb5;
 }
 
 .flowers {
-  background-color: #c1292e;
+  background-color: #699f8d;
 }
 
 .bows {
-  background-color: yellowgreen;
+  background-color: #c7d4d0;
 }
 
 /* .nav-header {

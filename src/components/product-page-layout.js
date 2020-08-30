@@ -20,7 +20,7 @@ const ProductImage = styled.div`
 const SelectButton = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  /* gap: 1.2rem; */
   padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
   background-color: turquoise;
@@ -38,6 +38,7 @@ const SelectButton = styled.div`
 
   & select {
     width: 7rem;
+    margin: 2rem auto;
   }
 `
 const BuyButton = styled.button`

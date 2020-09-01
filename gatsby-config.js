@@ -31,6 +31,8 @@ module.exports = {
         path: `${__dirname}/src/olderimages/`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-snipcartv3`,
       options: {

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import Image from "../olderimages/alittlecattywampus.png"
+import Image from "../logo-images/alittlecattywampus.png"
 import styled from "styled-components"
 
 const NavHeader = styled.div`

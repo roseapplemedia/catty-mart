@@ -31,8 +31,7 @@ module.exports = {
         path: `${__dirname}/src/logo-images/`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+
     {
       resolve: `gatsby-plugin-snipcartv3`,
       options: {
@@ -47,6 +46,17 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        // type: `type Value`,
+        // prefix: `abc-xyz/`,
       },
     },
     // {

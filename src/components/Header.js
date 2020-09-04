@@ -54,7 +54,7 @@ export default function Header({ siteTitle }) {
           {/* <LogoImage src={Image} alt="logo" className="logo-image" /> */}
           <Image
             cloudName="roseapplemedia"
-            publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/alittlecattywampus.png"
+            publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/cattywampuslogo.jpg"
             className="cloud-image"
             width="300"
             crop="fill"

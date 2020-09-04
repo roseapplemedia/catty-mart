@@ -4,7 +4,7 @@ price: 18.00
 tags: ["dog-collars"]
 description: For the silver dog.
 size: All
-fileds: silver-leaf
+fields: silver-leaf
 templateKey: product-page-layout
 image: catty/silver-leaf.jpg
 customField: 

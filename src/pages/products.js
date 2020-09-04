@@ -15,8 +15,10 @@ export default function ProductsPage({ data }) {
                 <Image
                   cloudName="roseapplemedia"
                   publicId={node.frontmatter.image}
-                  width="300"
-                  crop="scale"
+                  className="cloud-image"
+                  width="200"
+                  crop="fill"
+                  gravity="auto"
                   fetchFormat="auto"
                   quality="auto"
                   secure="true"

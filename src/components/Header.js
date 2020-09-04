@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import Image from "../logo-images/alittlecattywampus.png"
+// import Image from "../logo-images/alittlecattywampus.png"
 import styled from "styled-components"
+import { Image } from "cloudinary-react"
 
 const NavHeader = styled.div`
   margin-bottom: 4rem;
@@ -24,9 +25,9 @@ const NavLinks = styled.div`
     font-size: 1.2rem;
   }
 `
-const LogoImage = styled.img`
-  max-width: 350px;
-`
+// const LogoImage = styled.img`
+//   max-width: 350px;
+// `
 const BasketButton = styled.button`
   display: flex;
   justify-content: space-around;
@@ -50,7 +51,18 @@ export default function Header({ siteTitle }) {
       </Helmet>
       <NavHeader>
         <Link to="/">
-          <LogoImage src={Image} alt="logo" className="logo-image" />
+          {/* <LogoImage src={Image} alt="logo" className="logo-image" /> */}
+          <Image
+            cloudName="roseapplemedia"
+            publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/alittlecattywampus.png"
+            className="cloud-image"
+            width="300"
+            crop="fill"
+            gravity="auto"
+            fetchFormat="auto"
+            quality="auto"
+            secure="true"
+          ></Image>
         </Link>
 
         <BasketButton className="snipcart-checkout">

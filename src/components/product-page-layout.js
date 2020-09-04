@@ -14,7 +14,7 @@ const Container = styled.div`
 const ProductImage = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 2rem;
+  margin-right: 1rem;
   align-items: center;
 `
 const SelectButton = styled.div`
@@ -105,11 +105,13 @@ class Item extends React.Component {
           <Image
             cloudName="roseapplemedia"
             publicId={item.frontmatter.image}
-            width="350"
-            crop="scale"
+            width="650"
+            crop="fill"
+            gravity="auto"
             fetchFormat="auto"
             quality="auto"
             secure="true"
+            loading="lazy"
           ></Image>
           <ProductDesc>{item.frontmatter.description}</ProductDesc>
         </ProductImage>

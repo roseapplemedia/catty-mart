@@ -112,6 +112,7 @@ class Item extends React.Component {
             quality="auto"
             secure="true"
             loading="lazy"
+            className="card-image"
           ></Image>
           <ProductDesc>{item.frontmatter.description}</ProductDesc>
         </ProductImage>

@@ -56,7 +56,7 @@ module.exports = {
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
         // type: `type Value`,
-        // prefix: `abc-xyz/`,
+        prefix: `catty/`,
       },
     },
     // {

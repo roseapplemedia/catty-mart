@@ -11,11 +11,11 @@ export default function ProductsPage({ data }) {
           <Link key={node.fields.slug} to={node.fields.slug}>
             <div class="main-item">
               <h2 class=" category-tag">{node.frontmatter.title}</h2>
-              <div className="card__image">
+              <div className="card-image">
                 <Image
                   cloudName="roseapplemedia"
                   publicId={node.frontmatter.image}
-                  className="cloud-image"
+                  className="card-image"
                   width="200"
                   crop="fill"
                   gravity="auto"

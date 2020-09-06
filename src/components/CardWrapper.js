@@ -1,10 +1,4 @@
 import React from "react"
-// import DogCollar from "../logo-images/dog-collars.jpg"
-// import CatCollar from "../logo-images/cat-collars.jpg"
-// import Leashes from "../logo-images/leashes.jpg"
-// import Bandanas from "../logo-images/bandana.jpg"
-// import Flowers from "../logo-images/flowers.jpg"
-// import Bows from "../logo-images/bowties.jpg"
 import "../css/style.css"
 import { Link } from "gatsby"
 import { Image } from "cloudinary-react"
@@ -14,10 +8,9 @@ export default function CardWrapper() {
     <div className="main-grid">
       <div className="main-item dog-collars">
         <h2 className="dog-collars category-tag">dog collars</h2>
-        {/* <img className="card__image" src={DogCollar} alt="dog-collars" /> */}
         <Image
           cloudName="roseapplemedia"
-          publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/dog-collars.jpg"
+          publicId="/catty/dog-collars.jpg"
           className="card-image"
           width="275"
           // radius="max"
@@ -42,10 +35,9 @@ export default function CardWrapper() {
 
       <div class="main-item cat-collars">
         <h2 class="cat-collars category-tag">cat collars</h2>
-        {/* <img class="card__image" src={CatCollar} alt="dog-collars" /> */}
         <Image
           cloudName="roseapplemedia"
-          publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/cat-collars.jpg"
+          publicId="/catty/cat-collars.jpg"
           className="card-image"
           width="300"
           crop="fill"
@@ -68,10 +60,9 @@ export default function CardWrapper() {
       </div>
       <div class="main-item leashes">
         <h2 class="leashes category-tag">leashes</h2>
-        {/* <img class="card__image" src={Leashes} alt="dog-collars" /> */}
         <Image
           cloudName="roseapplemedia"
-          publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/leashes.jpg"
+          publicId="/catty/leashes.jpg"
           className="card-image"
           width="300"
           crop="fill"
@@ -93,10 +84,9 @@ export default function CardWrapper() {
 
       <div class="main-item flowers">
         <h2 class="flowers category-tag">flowers</h2>
-        {/* <img class="card__image" src={Flowers} alt="dog-collars" /> */}
         <Image
           cloudName="roseapplemedia"
-          publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/flowers.jpg"
+          publicId="/catty/flowers.jpg"
           className="card-image"
           width="300"
           crop="fill"
@@ -117,10 +107,9 @@ export default function CardWrapper() {
       </div>
       <div class="main-item bandanas">
         <h2 class="bandanas category-tag">bandanas</h2>
-        {/* <img class="card__image" src={Bandanas} alt="dog-collars" /> */}
         <Image
           cloudName="roseapplemedia"
-          publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/bandana.jpg"
+          publicId="/catty/bandana.jpg"
           className="card-image"
           width="300"
           crop="fill"
@@ -140,11 +129,10 @@ export default function CardWrapper() {
         </Link>
       </div>
       <div class="main-item bows">
-        <h2 class="bows category-tag">bows</h2>
-        {/* <img class="card__image" src={Bows} alt="dog-collars" /> */}
+        <h2 class="bows category-tag">bow-ties</h2>
         <Image
           cloudName="roseapplemedia"
-          publicId="https://res.cloudinary.com/roseapplemedia/image/upload/v1599157192/catty/bowties.jpg"
+          publicId="/catty/bowties.jpg"
           className="card-image"
           width="300"
           crop="fill"
@@ -160,7 +148,7 @@ export default function CardWrapper() {
           <li>Small, Large</li>
         </ul>
         <Link to="../bows">
-          <button class="card-button">browse bows</button>
+          <button class="card-button">browse bow-ties</button>
         </Link>
       </div>
     </div>

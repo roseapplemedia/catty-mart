@@ -4,7 +4,12 @@ import "../css/contact.css"
 export default function ContactPage() {
   return (
     <div className="container">
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact-form"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <label for="name">
           Name
           <input type="text" id="name" name="name" placeholder="Your name.." />
@@ -29,7 +34,7 @@ export default function ContactPage() {
           ></textarea>
         </label>
         <div hidden data-netlify-recaptcha="true"></div>
-        <input type="submit" value="Submit" />
+        <button>Send</button>
       </form>
     </div>
   )

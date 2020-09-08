@@ -35,7 +35,7 @@ export default function ContactPage() {
           ></textarea>
         </label>
         <div hidden data-netlify-recaptcha="true"></div>
-        <button>Send</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   )

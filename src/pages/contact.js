@@ -9,6 +9,7 @@ export default function ContactPage() {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        enctype="application/x-www-form-urlencoded"
       >
         <label for="name">
           Name

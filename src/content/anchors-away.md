@@ -1,12 +1,12 @@
 ---
-title: Anchors Away
+title: Hibiscus
 price: 18.00
 tags: ["dog-collars"]
-description: For the water dog.
+description: Beautiful collar for the flowery dog.
 size: All
-fields: anchors-away
+fields: hibiscus
 templateKey: product-page-layout
-image: catty/anchors-away.jpg
+image: catty/hibiscus.jpg
 customField: 
     name: Select Size
     values: [{name: 'XSmall', priceChange: 0}, {name: 'Small', priceChange: 2},{name: 'Medium', priceChange: 5.00},{name: 'Large', priceChange: 7.00}, {name: 'XLarge', priceChange: 12 }]

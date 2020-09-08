@@ -25,7 +25,7 @@ export default function ContactPage() {
           />
         </label>
 
-        <label for="subject">
+        <label for="messsage">
           Message
           <textarea
             id="message"

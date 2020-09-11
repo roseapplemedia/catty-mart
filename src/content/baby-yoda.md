@@ -1,12 +1,12 @@
 ---
-title: Blue Anchors
+title: Baby Yoda
 price: 18.00
 tags: ["dog-collars"]
-description: For the water dog.
+description: 
 size: All
-fields: blue-anchors
+fields: baby-yoda
 templateKey: product-page-layout
-image: catty/blue-anchors.jpg
+image: catty/baby-yoda.png
 customField: 
     name: Select Size
     values: [{name: 'XSmall', priceChange: 0}, {name: 'Small', priceChange: 2},{name: 'Medium', priceChange: 5.00},{name: 'Large', priceChange: 7.00}, {name: 'XLarge', priceChange: 12 }]

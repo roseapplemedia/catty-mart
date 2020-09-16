@@ -1,7 +1,7 @@
 ---
-title: Aztec Temple
-fields: aztec-temple
-image: catty/aztec-temple.png
+title: Evergreen Plaid
+fields: evergreen-plaid
+image: catty/evergreen-plaid.png
 price: 18.00
 description: 
 tags: ["dog-collars"]

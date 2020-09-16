@@ -1,7 +1,7 @@
 ---
-title: Aztec Temple
-fields: aztec-temple
-image: catty/aztec-temple.png
+title: Llama Bama
+fields: llama-bama
+image: catty/llama-bama.png
 price: 18.00
 description: 
 tags: ["dog-collars"]

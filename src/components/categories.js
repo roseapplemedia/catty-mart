@@ -1,0 +1,45 @@
+categories: [
+        {
+          name: "Dog Collars",
+          description: "Dog Collars for the smart and loyal friend.",
+          id: "category01",
+          linkto: "/dog-collars/",
+          image: "catty/anoir.jpg",
+        },
+        {
+          name: "Cat Collars",
+          description: "Cat Collars for the aloof friend.",
+          id: "category02",
+          linkto: "/cat-collars/",
+          image: "catty/anya.jpg",
+        },
+        {
+          name: "Bandanas",
+          description: "Dog or Cat bandanas.",
+          id: "category03",
+          linkto: "/bandanas/",
+          image: "catty/flower-f.jpg",
+        },
+        {
+          name: "Leashes",
+          description: "Dog or Cat leashes.",
+          id: "category04",
+          linkto: "/leashes/",
+          image: "catty/flower-f.jpg",
+        },
+        
+        {
+          name: "Flowers",
+          description: "Dog or Cat flowers.",
+          id: "category05",
+          linkto: "/flowers/",
+          image: "catty/flower-f.jpg",
+        },
+        {
+          name: "Bowites",
+          description: "Dog or Cat bowties.",
+          id: "category06",
+          linkto: "/bowties/",
+          image: "catty/flower-f.jpg",
+        },
+      ],

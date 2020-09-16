@@ -1,7 +1,7 @@
 ---
-title: Aztec Temple
-fields: aztec-temple
-image: catty/aztec-temple.png
+title: Buffalo Plaid
+fields: buffalo-plaid
+image: catty/buffalo-plaid.png
 price: 18.00
 description: 
 tags: ["dog-collars"]

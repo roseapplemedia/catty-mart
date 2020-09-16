@@ -1,7 +1,7 @@
 ---
-title: Aztec Temple
-fields: aztec-temple
-image: catty/aztec-temple.png
+title: Chic Citrus
+fields: chic-citrus
+image: catty/chic-citrus.png
 price: 18.00
 description: 
 tags: ["dog-collars"]
